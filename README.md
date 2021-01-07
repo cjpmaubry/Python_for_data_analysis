@@ -191,7 +191,7 @@ Une fois exécuté l'API tourne à l'adresse indiqué dans le fichier (par défa
 ## Requetage
 Pour requeter l'api il faut lui envoyer au format json ce genre d'information : [[1,50,1,1,1,2,1,1,3,0,0,2,1,2]]  
 Chaque chiffre présent dans le tableau correspond à une variable.
-Dans le cas de l'utilisation du script la création du tableau est automatque, il suffit de chosir les valeurs souhaitez en changemant les valeurs des variables.
+Dans le cas de l'utilisation du script la création du tableau est automatique, il suffit de chosir les valeurs souhaitez en changemant les valeurs des variables.  
 Au cas ou on souhait construire le tableau à la main voici l'ordre des valeurs et leur correspondance avec la variable :  
 
 | Position | Reference                      | type  | Description                                                                    |
