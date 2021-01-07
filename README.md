@@ -204,10 +204,10 @@ Au cas ou on souhait construire le tableau à la main voici l'ordre des valeurs 
 | 6        | NCP                            | int   | Nombre de repas                                                                |
 | 7        | CAEC                           | int   | 0 = no; 1 = sometimes; 2 = frequently; 3 = always                              |
 | 8        | SMOKE                          | int   | 1 = oui  ; 0 = non                                                             |
-| 9        | CH2O                           | float | nombre de litre d'eau bu par jour                                              |
+| 9        | CH2O                           | int   | nombre de litre d'eau bu par jour                                              |
 | 10       | SCC                            | int   | 1 = oui  ; 0 = non                                                             |
-| 11       | FAF                            | float | frequence d'activité physique (X fois par semaine)                             |
-| 12       | TUE                            | float | 0 = 0-2h/j; 1 = 3-5h/j; 2 = plus de 5h/j                                       |
+| 11       | FAF                            | int   | 0 = non; 1 = 1-2; 2 = 2-4; 3 = 5 ou plus  (par semaine)                        |
+| 12       | TUE                            | int   | 0 = 0-2h/j; 1 = 3-5h/j; 2 = plus de 5h/j                                       |
 | 13       | CALC                           | int   | 0 = no; 1 = sometimes; 2 = frequently; 3 = always                              |
 | 14       | MTRANS                         | int   | 0 = Automobile; 1 = Bike; 2 = Motorbike; 3 =Public Transportation; 4 = Walking |
 
