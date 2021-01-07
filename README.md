@@ -190,7 +190,7 @@ Le fonctionnement de l'API est défini dans la partie suivante.
 
 # Comment utiliser l'API
 ## Mise en place
-Dans un premier temps créé un dossier contenant le dossier model (contenant randomforest.pickle) et le fichier api.py
+Dans un premier temps créé un dossier contenant le dossier models (contenant randomforest.pickle) et le fichier api.py
 Puis ouvrir un terminal et executer le api.py  
 (par ex : python3 api.py )
 Une fois exécuté l'API tourne à l'adresse indiqué dans le fichier (par défaut: http://0.0.0.0:5000)  
