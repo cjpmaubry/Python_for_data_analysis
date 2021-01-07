@@ -180,6 +180,13 @@ Eventuellement au besoin réaliser c'est installation python :
 *  pip install sklearn  
 *  pip install matplotlib  
 
+# Conclusion
+## Data-Analys
+# Modélisation
+# API
+Nous avons réussi à créer une API utilisant le modèle RandomForest afin de prédire la corpulence d'un individu suivant les différentes variables qui étaient présentes dans le dataset.  
+Le fonctionnement de l'API est défini dans la partie suivante.
+
 
 # Comment utiliser l'API
 ## Mise en place
