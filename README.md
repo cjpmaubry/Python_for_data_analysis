@@ -20,6 +20,7 @@ Les différents fichiers utilisés sont les suivants:
 *  AUBRY_BAROUX_IBO1_notebook.ipynb: Il s'agit du notebook en python
 *  api.py: Il s'agit de l'API
 *  request.py: Il s'agit du script permettant d'interroger l'API
+*  randomforest.pickle : Il s'agit du modèle de machine learnig créé dans le notebook et enregistré sous le format .pkl
 *  AUBRY_BAROUX_IBO1_powerpoint.pdf : Il s'agit du powerpoint expliquant les tenants et les aboutissants du projet
 
 Note : le dataset utilisé est disponible au format .csv à l'adresse suivante :   
@@ -56,6 +57,92 @@ https://archive.ics.uci.edu/ml/datasets/Estimation+of+obesity+levels+based+on+ea
     * Obese stage 2: 35.0–39.9
     * (Morbidly) obese stage 3: 40.0 ou plus
 
+Les réponses possible (selon l'étude réalisé par les auteurs) :
+**Questions et réponses possible dans l'enquête :**
+
+¿What is your gender?	
+
+* • Female
+* • Male
+
+¿what is your age?	Numeric value
+
+¿what is your height?	Numeric value in meters
+
+¿what is your weight?	Numeric value in kilograms
+
+¿Has a family member suffered or suffers from overweight?	
+
+* Yes
+* No
+
+¿Do you eat high caloric food frequently?	
+
+* Yes
+* No
+
+¿Do you usually eat vegetables in your meals?	
+
+* Never
+* Sometimes
+* Always
+
+¿How many main meals do you have daily?	
+
+* Between 1 y 2
+* Three
+* More than three
+
+¿Do you eat any food between meals?	
+
+* No
+* Sometimes
+* Frequently
+* Always
+
+¿Do you smoke?	
+
+* Yes
+* No
+
+¿How much water do you drink daily?	
+
+* Less than a liter
+* Between 1 and 2 L
+* More than 2 L
+
+¿Do you monitor the calories you eat daily?	
+
+* Yes
+* No
+
+¿How often do you have physical activity?	
+
+* I do not have
+* 1 or 2 days
+* 2 or 4 days
+* 4 or 5 days
+
+¿How much time do you use technological devices such as cell phone, videogames, television, computer and others?	
+
+* 0–2 hours
+* 3–5 hours
+* More than 5 hours
+
+¿how often do you drink alcohol?	
+
+* I do not drink
+* Sometimes
+* Frequently
+* Always
+
+¿Which transportation do you usually use?	
+
+* Automobile
+* Motorbike
+* Bike
+* Public Transportation
+* Walking
 
 # Auteurs
 ## Du Dataset
@@ -96,7 +183,8 @@ Eventuellement au besoin réaliser c'est installation python :
 
 # Comment utiliser l'API
 ## Mise en place
-Dans un premier temps ouvrir un terminale et executer le api.py  
+Dans un premier temps créé un dossier contenant le dossier model (contenant randomforest.pickle) et le fichier api.py
+Puis ouvrir un terminal et executer le api.py  
 (par ex : python3 api.py )
 Une fois exécuté l'API tourne à l'adresse indiqué dans le fichier (par défaut: http://0.0.0.0:5000)  
 
@@ -137,6 +225,6 @@ Le processus de requetage est le suivant :
 *  2) Lancer le logiciel
 *  3) Paramétrer comme montré si dessous et appuyer sur send :  
 
-![alt text] (https://github.com/cjpmaubry/Python_for_data_analysis/blob/main/src/postman_conf.PNG)
+![Image](https://github.com/cjpmaubry/Python_for_data_analysis/blob/main/src/postman_conf.PNG)
 
 Au besoin suivre ce tuto : https://www.toolsqa.com/postman/post-request-in-postman/
