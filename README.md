@@ -32,6 +32,7 @@ Les différents fichiers utilisés sont les suivants:
 *  api.py: Il s'agit de l'API
 *  request.py: Il s'agit du script permettant d'interroger l'API
 *  randomforest.pickle : Il s'agit du modèle de machine learnig créé dans le notebook et enregistré sous le format .pkl
+*  scaler.pickle : Il s'agit d'un fichier qui permet de centrer reduire les données du modele randomforest.pickle
 *  AUBRY_BAROUX_IBO1_powerpoint.pdf : Il s'agit du powerpoint expliquant les tenants et les aboutissants du projet
 
 Note : le dataset utilisé est disponible au format .csv à l'adresse suivante :   
@@ -227,9 +228,12 @@ Le fonctionnement de l'API est défini dans la partie suivante.
 ------------------------------------------------------
 
 # Comment utiliser l'API
-## Mise en place
-Dans un premier temps créer un dossier contenant le dossier models (contenant randomforest.pickle) et le fichier api.py
-Puis ouvrir un terminal et executer le api.py  
+## Mise en place  
+Dans un premier temps télécharger le dossier API
+Ce dossier contient 2 scripts python et un dossier comportant 2 fichiers pickle.
+Ouvrir un terminale dans le dossier API
+Optionnel: Installer les modules python requis (request,sklearn,...)
+Executer le api.py  
 (par ex : python3 api.py )
 Une fois exécuté l'API tourne à l'adresse indiqué dans le fichier (par défaut: http://0.0.0.0:5000)  
 
