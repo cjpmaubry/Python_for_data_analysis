@@ -179,7 +179,7 @@ Ce dépot présente donc le travail de :
 # Démarrage
 ## Téléchargement
 Le dataset utilisé est disponible au format .csv à l'adresse suivante :   
-https://archive.ics.uci.edu/ml/datasets/Estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition+  
+
 
 ## Import préalable
 Afin de pouvoir lire et utiliser le notebook vous devez utiliser jupyter-notebook ou utiliser Google Collab.  
@@ -199,7 +199,14 @@ Eventuellement au besoin réaliser ces installations python :
 
 # Conclusion
 ## Data-Analys
-## Modélisation
+![Image]
+## Modélisation  
+Nous avons utilisé l'ensemble des colonnes du dataset afin de créer nos modèles de machine learning.(A l'exeption de la colonne cible et du poids et de la taille)  
+Nous avons choisit de tester différents modèle afin de chosir celui qui donner les meilleurs résultat.
+
+![Image](https://raw.githubusercontent.com/cjpmaubry/Python_for_data_analysis/main/src/ModeleMLmatrix.PNG)   
+
+Après l'analyse des résultats de nos différents modèles nous avons choisit le modèle RandomForest. Ce modèle nous à semblé etre le plus pertinent avec une précision de 84%.
 ## API
 Nous avons réussi à créer une API utilisant le modèle RandomForest afin de prédire la corpulence d'un individu suivant les différentes variables qui étaient présentes dans le dataset. Cette API est écrite en Python et utilise Flask.
 Le fonctionnement de l'API est défini dans la partie suivante.
