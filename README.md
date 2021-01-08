@@ -1,7 +1,18 @@
 # Python_for_data_analysis
 Repository for Python for data analysis course
 
-# Information Générale
+------------------------------------------------------
+
+# Sommaire
+ - [Information Générale](#information-générale)
+ - [Auteurs](#auteurs)
+ - [Démarrage](#démarrage)
+ - [Conclusion](#conclusion)
+ - [Comment utiliser l'API](#comment-utiliser-lapi)
+
+------------------------------------------------------
+
+# Information Générale 
 ## Introduction
 Ce projet s'inscrit dans le cadre du cour intitulé Python for data analysis. 
 
@@ -144,6 +155,8 @@ Les réponses possible (selon l'étude réalisé par les auteurs) :
 * Public Transportation
 * Walking
 
+------------------------------------------------------
+
 # Auteurs
 ## Du Dataset
 **Titre** : Dataset for estimation of obesity levels based on eating habits and physical condition in individuals from Colombia, Peru and Mexico  
@@ -160,6 +173,8 @@ Le notebook et l'API ont été réalisé dans le cadre du cour intitulé Python 
 Ce dépot présente donc le travail de :
 *  AUBRY Corentin
 *  BAROUX Alexandre  
+
+------------------------------------------------------
 
 # Démarrage
 ## Téléchargement
@@ -180,13 +195,16 @@ Eventuellement au besoin réaliser c'est installation python :
 *  pip install sklearn  
 *  pip install matplotlib  
 
+------------------------------------------------------
+
 # Conclusion
 ## Data-Analys
 ## Modélisation
 ## API
-Nous avons réussi à créer une API utilisant le modèle RandomForest afin de prédire la corpulence d'un individu suivant les différentes variables qui étaient présentes dans le dataset.  
+Nous avons réussi à créer une API utilisant le modèle RandomForest afin de prédire la corpulence d'un individu suivant les différentes variables qui étaient présentes dans le dataset. Cette API est ecrite en Python et utilise Flask.
 Le fonctionnement de l'API est défini dans la partie suivante.
 
+------------------------------------------------------
 
 # Comment utiliser l'API
 ## Mise en place
