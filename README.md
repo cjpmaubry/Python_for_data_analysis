@@ -4,7 +4,7 @@ Repository for Python for data analysis course
 ------------------------------------------------------
 
 # Sommaire
- - [Information Générale](#information-générale)
+ - [Informations Générales](#informations-générales)
  - [Auteurs](#auteurs)
  - [Démarrage](#démarrage)
  - [Conclusion](#conclusion)
@@ -12,19 +12,19 @@ Repository for Python for data analysis course
 
 ------------------------------------------------------
 
-# Information Générale 
+# Informations Générales 
 ## Introduction
-Ce projet s'inscrit dans le cadre du cour intitulé Python for data analysis. 
+Ce projet s'inscrit dans le cadre du cours intitulé Python for data analysis. 
 
 ## L'objectif
 L'objectif de ce projet est d'étudier le dataset :"Estimation of obesity levels based on eating habits and physical condition Data Set". 
 Ce dataset a pour vocation de présenter les différents niveaux d'obésité en fonction de plusieurs paramètres.
-Nous avons donc choisit de nous interrésser à un moyen de prédire la corpulence d'un individu suivant les différentes variables présentées dans le dataset.
-(Ce dataset à d'ailleur été consu dans ce sens)  
+Nous avons donc choisis de nous interrésser à un moyen de prédire la corpulence d'un individu suivant les différentes variables présentées dans le dataset.
+(Ce dataset a d'ailleur été conçu dans ce sens)  
 Nous avons pour cela décidé de procéder en 3 temps :  
-*  Dans un premier temps étudié les différents variables de ce dataset.  
-*  Dans un second temps nous avons réalisé plusieurs modèles de machine learning  
-*  Dans un dernier temps nous avons expoter le meilleur modèle afin de créer une API permettant de prévoir la corpulence d'un individu suivant les meme variable que celle du dataset.  
+*  Dans un premier temps, nous avons étudié les différents variables de ce dataset.  
+*  Dans un second temps, nous avons réalisé plusieurs modèles de machine learning  
+*  Dans un dernier temps, nous avons exporté le meilleur modèle afin de créer une API permettant de prévoir la corpulence d'un individu suivant les mêmes variables que celles du dataset.  
 
 ## Les différents fichiers
 Les différents fichiers utilisés sont les suivants:
@@ -46,8 +46,8 @@ https://archive.ics.uci.edu/ml/datasets/Estimation+of+obesity+levels+based+on+ea
 *   Gender : Le sexe de l'individu (homme ou femme)
 *   Age : L'age de l'individu
 *   Height : La taille de l'individu
-*   Weight : Le poid de l'individu
-*   family_history_with_overweight : L'individu à t'il dans sa famille des antécédent avec l'obésité
+*   Weight : Le poids de l'individu
+*   family_history_with_overweight : L'individu a-t'il dans sa famille des antécédents avec l'obésité
 *   FAVC : Est ce que la personne mange souvent de la nourriture calorique
 *   FCVC : Est ce que la personne mange des légumes pendant ses repas
 *   NCP : Le nombre de repas quotidiens
@@ -68,7 +68,7 @@ https://archive.ics.uci.edu/ml/datasets/Estimation+of+obesity+levels+based+on+ea
     * Obese stage 2: 35.0–39.9
     * (Morbidly) obese stage 3: 40.0 ou plus
 
-Les réponses possible (selon l'étude réalisé par les auteurs) :
+Les réponses possible (selon l'étude réalisée par les auteurs) :
 **Questions et réponses possible dans l'enquête :**
 
 ¿What is your gender?	
@@ -169,7 +169,7 @@ https://www.sciencedirect.com/science/article/pii/S2352340919306985?via%3Dihub
 
 ## Du Notebook et de l'API
 
-Le notebook et l'API ont été réalisé dans le cadre du cour intitulé Python for data analysis.  
+Le notebook et l'API ont été réalisés dans le cadre du cours intitulé Python for data analysis.  
 Ce dépot présente donc le travail de :
 *  AUBRY Corentin
 *  BAROUX Alexandre  
@@ -188,7 +188,7 @@ Lien Google Collab : https://colab.research.google.com
 
 Note : Le notebook de ce projet à été réalisé avec Google Collab.  
 
-Eventuellement au besoin réaliser c'est installation python :
+Eventuellement au besoin réaliser ces installations python :
 *  pip install pandas  
 *  pip install seaborn  
 *  pip install numpy  
@@ -201,22 +201,22 @@ Eventuellement au besoin réaliser c'est installation python :
 ## Data-Analys
 ## Modélisation
 ## API
-Nous avons réussi à créer une API utilisant le modèle RandomForest afin de prédire la corpulence d'un individu suivant les différentes variables qui étaient présentes dans le dataset. Cette API est ecrite en Python et utilise Flask.
+Nous avons réussi à créer une API utilisant le modèle RandomForest afin de prédire la corpulence d'un individu suivant les différentes variables qui étaient présentes dans le dataset. Cette API est écrite en Python et utilise Flask.
 Le fonctionnement de l'API est défini dans la partie suivante.
 
 ------------------------------------------------------
 
 # Comment utiliser l'API
 ## Mise en place
-Dans un premier temps créé un dossier contenant le dossier models (contenant randomforest.pickle) et le fichier api.py
+Dans un premier temps créer un dossier contenant le dossier models (contenant randomforest.pickle) et le fichier api.py
 Puis ouvrir un terminal et executer le api.py  
 (par ex : python3 api.py )
 Une fois exécuté l'API tourne à l'adresse indiqué dans le fichier (par défaut: http://0.0.0.0:5000)  
 
-## Requetage
-Pour requeter l'api il faut lui envoyer au format json ce genre d'information : [[1,50,1,1,1,2,1,1,3,0,0,2,1,2]]  
+## Requêtage
+Pour requêter l'api il faut lui envoyer au format json ce genre d'information : [[1,50,1,1,1,2,1,1,3,0,0,2,1,2]]  
 Chaque chiffre présent dans le tableau correspond à une variable.
-Dans le cas de l'utilisation du script la création du tableau est automatique, il suffit de chosir les valeurs souhaitez en changemant les valeurs des variables.  
+Dans le cas de l'utilisation du script la création du tableau est automatique, il suffit de chosir les valeurs souhaitées en changeant les valeurs des variables.  
 Au cas ou on souhait construire le tableau à la main voici l'ordre des valeurs et leur correspondance avec la variable :  
 
 | Position | Reference                      | type  | Description                                                                    |
@@ -229,7 +229,7 @@ Au cas ou on souhait construire le tableau à la main voici l'ordre des valeurs 
 | 6        | NCP                            | int   | Nombre de repas                                                                |
 | 7        | CAEC                           | int   | 0 = no; 1 = sometimes; 2 = frequently; 3 = always                              |
 | 8        | SMOKE                          | int   | 1 = oui  ; 0 = non                                                             |
-| 9        | CH2O                           | int   | nombre de litre d'eau bu par jour                                              |
+| 9        | CH2O                           | int   | nombre de litres d'eau bus par jour                                              |
 | 10       | SCC                            | int   | 1 = oui  ; 0 = non                                                             |
 | 11       | FAF                            | int   | 0 = non; 1 = 1-2; 2 = 2-4; 3 = 5 ou plus  (par semaine)                        |
 | 12       | TUE                            | int   | 0 = 0-2h/j; 1 = 3-5h/j; 2 = plus de 5h/j                                       |
@@ -238,14 +238,14 @@ Au cas ou on souhait construire le tableau à la main voici l'ordre des valeurs 
 
 
 ### En utilisant request.py
-La première facon de requéter l'API est d'utiliser le script python proposer dans ce dépot. Intitulé "request.py" il permet d'interroger le modèle créé au préalable dans le notebook. Le processus de requetage est le suivant :  
+La première façon de requéter l'API est d'utiliser le script python proposé dans ce dépôt. Intitulé "request.py" il permet d'interroger le modèle créé au préalable dans le notebook. Le processus de requêtage est le suivant :  
 * 1) Ouvir le fichier request.py
-* 2) Définir dans ce dernier les paramètres voulue (age,sexe,etc...)
+* 2) Définir dans ce dernier les paramètres voulus (age,sexe,etc...)
 * 3) Executer le fichier dans la console (python3 request.py), le résultat de la prédiction apparait alors dans la console.
 
 ### En utilisant Postman
-La deuxième facon de requéter l'API est d'utiliser par exemple un logiciel prevu à cette effet tel que Postman.   
-Le processus de requetage est le suivant :  
+La deuxième facon de requéter l'API est d'utiliser par exemple un logiciel prevu à cet effet tel que Postman.   
+Le processus de requêtage est le suivant :  
 *  1) Télécharger et installer Postman
 *  2) Lancer le logiciel
 *  3) Paramétrer comme montré si dessous et appuyer sur send :  
