@@ -215,12 +215,12 @@ Voici les différentes répartitions observées :
 ![Image](https://raw.githubusercontent.com/cjpmaubry/Python_for_data_analysis/main/src/Data%20Analysis%207.PNG)  
 
 ## Modélisation  
-Nous avons utilisé l'ensemble des colonnes du dataset afin de créer nos modèles de machine learning.(A l'exeption de la colonne cible et du poids et de la taille)  
+Nous avons utilisé l'ensemble des colonnes du dataset afin de créer nos modèles de machine learning (à l'exception de la colonne cible, du poids et de la taille).  
 Nous avons choisit de tester différents modèle afin de chosir celui qui donner les meilleurs résultat.
 
 ![Image](https://raw.githubusercontent.com/cjpmaubry/Python_for_data_analysis/main/src/ModeleMLmatrix.PNG)   
 
-Après l'analyse des résultats de nos différents modèles nous avons choisit le modèle RandomForest. Ce modèle nous à semblé etre le plus pertinent avec une précision de 84%.
+Après l'analyse des résultats de nos différents modèles nous avons choisis le modèle RandomForest. Ce modèle nous à semblé etre le plus pertinent avec une précision de 84%.
 ## API
 Nous avons réussi à créer une API utilisant le modèle RandomForest afin de prédire la corpulence d'un individu suivant les différentes variables qui étaient présentes dans le dataset. Cette API est écrite en Python et utilise Flask.
 Le fonctionnement de l'API est défini dans la partie suivante.
@@ -231,11 +231,11 @@ Le fonctionnement de l'API est défini dans la partie suivante.
 ## Mise en place  
 Dans un premier temps télécharger le dossier API
 Ce dossier contient 2 scripts python et un dossier comportant 2 fichiers pickle.
-Ouvrir un terminale dans le dossier API
+Ouvrir un terminal dans le dossier API
 Optionnel: Installer les modules python requis (request,sklearn,...)
 Executer le api.py  
 (par ex : python3 api.py )
-Une fois exécuté l'API tourne à l'adresse indiqué dans le fichier (par défaut: http://0.0.0.0:5000)  
+Une fois exécutée l'API tourne à l'adresse indiqué dans le fichier (par défaut: http://0.0.0.0:5000)  
 
 ## Requêtage
 Pour requêter l'api il faut lui envoyer au format json ce genre d'information : [[1,50,1,1,1,2,1,1,3,0,0,2,1,2]]  
