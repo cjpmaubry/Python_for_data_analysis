@@ -179,7 +179,7 @@ Ce dépot présente donc le travail de :
 # Démarrage
 ## Téléchargement
 Le dataset utilisé est disponible au format .csv à l'adresse suivante :   
-
+https://archive.ics.uci.edu/ml/datasets/Estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition+   
 
 ## Import préalable
 Afin de pouvoir lire et utiliser le notebook vous devez utiliser jupyter-notebook ou utiliser Google Collab.  
@@ -198,8 +198,21 @@ Eventuellement au besoin réaliser ces installations python :
 ------------------------------------------------------
 
 # Conclusion
-## Data-Analys
-![Image]
+## Data-Analys  
+
+Nous avons décidé d’analyser chacune des variables présentes dans le dataset. Le but de cette analyse a été de vérifier la structure des différentes variables, de connaître la répartition des individus suivant chaque variable et enfin d’essayer de classifier les colonnes en fonction de leurs impacts sur la corpulence d’un individu.
+Cette étude avait egalement pour but de mieux comprendre les tenants et aboutissant des données synthétiques. On s’est particulièrement demandé si c’est donnée pouvaient être génératrice de biais statistique.   
+
+Voici les différentes répartitions observées :  
+
+![Image](https://raw.githubusercontent.com/cjpmaubry/Python_for_data_analysis/main/src/Data%20Analysis%201.PNG)
+![Image](https://raw.githubusercontent.com/cjpmaubry/Python_for_data_analysis/main/src/Data%20Analysis%202.PNG)
+![Image](https://raw.githubusercontent.com/cjpmaubry/Python_for_data_analysis/main/src/Data%20Analysis%203.PNG)
+![Image](https://raw.githubusercontent.com/cjpmaubry/Python_for_data_analysis/main/src/Data%20Analysis%204.PNG)
+![Image](https://raw.githubusercontent.com/cjpmaubry/Python_for_data_analysis/main/src/Data%20Analysis%205.PNG)
+![Image](https://raw.githubusercontent.com/cjpmaubry/Python_for_data_analysis/main/src/Data%20Analysis%206.PNG)
+![Image](https://raw.githubusercontent.com/cjpmaubry/Python_for_data_analysis/main/src/Data%20Analysis%207.PNG)  
+
 ## Modélisation  
 Nous avons utilisé l'ensemble des colonnes du dataset afin de créer nos modèles de machine learning.(A l'exeption de la colonne cible et du poids et de la taille)  
 Nous avons choisit de tester différents modèle afin de chosir celui qui donner les meilleurs résultat.
